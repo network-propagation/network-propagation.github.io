@@ -1,6 +1,6 @@
 # Learning Versatile Neural Architectures by Propagating Network Codes
 
-![diagram](code/docs/diagram.png)
+![diagram](CODE/docs/diagram.png)
 
 ## Introduction
 This work includes:  
@@ -8,6 +8,8 @@ This work includes:
 (2) An efficient predictor-based algorithm **Network Coding Propagation (NCP)**, which back-propagates the gradients of neural predictors to directly update architecture codes along desired gradient directions for various objectives.
 
 This framework is implemented and tested with Ubuntu/Mac OS, CUDA 9.0/10.0, Python 3, Pytorch 1.3-1.6, NVIDIA Tesla V100/CPU.
+
+### Demo Page: https://network-propagation.github.io
 
 ## Dataset
 We build our benchmark on four computer vision tasks, i.e., image classification (ImageNet), semantic segmentation (CityScapes), 3D detection (KITTI), and video recognition (HMDB51).
@@ -79,7 +81,7 @@ input = torch.randn(1, 3, 224, 224)
 macs, params = profile(model, inputs=(input, ))  
 ```
 
-![structure](code/docs/structure.png)
+![structure](CODE/docs/structure.png)
 
 ## Data Format
 Each code in `data/search_list.txt` denotes an architecture. It can be load in our supernet as follows:
